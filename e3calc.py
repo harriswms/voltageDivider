@@ -42,6 +42,7 @@ bestRatio = ratios[(np.abs(lst - desiredRatio)).argmin()]
 
 print(f"Desired voltage ratio: {desiredRatio}")
 print(f"Best implemented ratio: {bestRatio[2]}")
+print(f"Output voltage will be reached at Vin = {round(outputVoltage / bestRatio[2], 3)}V")
 print()
 
 for v in baseVals:
